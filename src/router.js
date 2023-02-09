@@ -2,22 +2,26 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import CreateUser from './components/CreateUser.vue'
 import EditUser from './components/EditUser.vue'
-import UserList from './components/UserList'
+import ListUser from './components/ListUser'
 
 const routes = [
     {
         path: '/',
-        name: 'UserList',
-        component: UserList
+        redirect: { name: 'ListUser' }
+    },
+    {
+        path: '/user/list',
+        name: 'list_user',
+        component: ListUser
     },
     {
         path: '/user/create',
-        name: 'CreateUser',
+        name: 'create_user',
         component: CreateUser
     },
     {
         path: '/user/edit/:id',
-        name: 'EditUser',
+        name: 'edit_user',
         component: EditUser
     }
 ]

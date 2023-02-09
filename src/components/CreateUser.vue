@@ -14,6 +14,7 @@
     <img :src="avatar" />
 
     <button @click="createUser">CREATE</button>
+    
 
 </template>
   
