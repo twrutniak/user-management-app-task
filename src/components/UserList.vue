@@ -24,7 +24,7 @@ export default {
     },
     async created() {
         await axios
-            .get('https://reqres.in/api/users')
+            .get(process.env.VUE_APP_REST_API_URL + '/api/users')
             .then((response) => {
                 console.log(response.data.data)
                 this.userList = response.data.data;

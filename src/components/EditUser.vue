@@ -32,7 +32,7 @@ export default {
     methods: {
         updateUser: async function () {
             await axios
-                .put(`https://reqres.in/api/users/${this.$route.params.id}`, {
+                .put(process.env.VUE_APP_REST_API_URL + `/api/users/${this.$route.params.id}`, {
                     "first_name": this.name,
                     "last_name": this.surname
                 })
@@ -43,7 +43,7 @@ export default {
     },
     async created() {
         await axios
-            .get(`https://reqres.in/api/users/${this.$route.params.id}`)
+            .get(process.env.VUE_APP_REST_API_URL + `/api/users/${this.$route.params.id}`)
             .then((response) => {
                 this.name = response.data.data.first_name;
                 this.surname = response.data.data.last_name;

@@ -32,7 +32,7 @@ export default {
     methods: {
         createUser: async function () {
             await axios
-                .post(`https://reqres.in/api/users/`, {
+                .post(process.env.VUE_APP_REST_API_URL + `/api/users/`, {
                     "first_name": this.name,
                     "last_name": this.surname
                 })
