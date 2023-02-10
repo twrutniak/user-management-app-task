@@ -1,5 +1,11 @@
 <template>
-  <router-view />
+<q-layout view="hHh lpR fFf">
+
+  <q-page-container class="window-height">
+    <router-view />
+  </q-page-container>
+
+</q-layout> 
 </template>
 
 <script>
@@ -14,4 +20,7 @@ export default {
 </script>
 
 <style>
+.small-button {
+  height: 50px !important;
+}
 </style>

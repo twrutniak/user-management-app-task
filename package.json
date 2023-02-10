@@ -1,28 +1,21 @@
 {
   "name": "user-management-app",
   "version": "1.0.0",
-  "description": "User management app for recruitment purposes.",
-  "main": "src/main.js",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twrutniak/user-management-app-task.git"
-  },
+  "description": "User management app for recruitment purposes.",
   "author": "Tomasz Wrutniak",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/twrutniak/user-management-app-task/issues"
-  },
-  "homepage": "https://github.com/twrutniak/user-management-app-task#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "src/main.js",
   "dependencies": {
+    "@quasar/extras": "^1.0.0",
     "axios": "^1.3.2",
     "core-js": "^3.8.3",
+    "quasar": "^2.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.1.6"
   },
@@ -33,7 +26,10 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "1.32.12",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-quasar": "~5.0.1"
   },
   "eslintConfig": {
     "root": true,
@@ -54,5 +50,14 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/twrutniak/user-management-app-task/issues"
+  },
+  "homepage": "https://github.com/twrutniak/user-management-app-task#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twrutniak/user-management-app-task.git"
+  }
 }

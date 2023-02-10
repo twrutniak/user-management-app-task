@@ -7,7 +7,7 @@ import ListUser from './components/ListUser'
 const routes = [
     {
         path: '/',
-        redirect: { name: 'ListUser' }
+        redirect: { name: 'list_user' }
     },
     {
         path: '/user/list',
